@@ -13,7 +13,7 @@ namespace Roleplay.Business
             Novice
         });
 
-        public static Job PoliceJob = new(0, "Police", new List<JobGrade>
+        public static Job PoliceJob = new(1, "Police", new List<JobGrade>
         {
             Chief,
             Manager,

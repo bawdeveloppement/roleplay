@@ -18,7 +18,15 @@ namespace Roleplay.Business
             this.Name = name;
             this.OwnerId = ownerId;
         }
-    
-        
+
+
+        public void AddJobToMember()
+        {
+            foreach(var member in Members)
+            {
+                member.SetActiveJob(JobLibrary.ButcherJob);
+            }
+        }
+
     }
 }
